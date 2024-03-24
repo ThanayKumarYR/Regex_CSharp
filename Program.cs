@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace RegexProblems
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Regex problems !");
         }
     }
 }

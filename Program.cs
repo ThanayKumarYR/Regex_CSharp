@@ -11,6 +11,8 @@ namespace RegexProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regex problems !");
+            User user = new User();
+            user.Display();
         }
     }
 }

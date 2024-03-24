@@ -1,0 +1,7 @@
+C:\Users\Thanay\source\repos\RegexProblems\bin\Debug\RegexProblems.exe.config
+C:\Users\Thanay\source\repos\RegexProblems\bin\Debug\RegexProblems.exe
+C:\Users\Thanay\source\repos\RegexProblems\bin\Debug\RegexProblems.pdb
+C:\Users\Thanay\source\repos\RegexProblems\obj\Debug\RegexProblems.csproj.AssemblyReference.cache
+C:\Users\Thanay\source\repos\RegexProblems\obj\Debug\RegexProblems.csproj.CoreCompileInputs.cache
+C:\Users\Thanay\source\repos\RegexProblems\obj\Debug\RegexProblems.exe
+C:\Users\Thanay\source\repos\RegexProblems\obj\Debug\RegexProblems.pdb

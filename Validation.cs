@@ -12,9 +12,17 @@ namespace RegexProblems
         //pattern to match First name where 1st letter is caps and next 2 to 9 letters are small
         private string PatName { get; set; } = @"^[A-Z][a-z]{2,9}$";
 
-        public bool IsName(string firstName)
+        private string PatEmail { get; set; } = @"^\w{3,}(.\w{1,})?@[a-z]{1,}.[a-z]{1,}(.[a-z]{1,})?$";
+
+        public bool IsName(string Name)
         {
-            if (Regex.IsMatch(firstName,PatName)) return true;
+            if (Regex.IsMatch(Name,PatName)) return true;
+            else return false;
+        }
+
+        public bool IsEmail(string email) 
+        {
+            if (Regex.IsMatch(email,PatEmail)) return true;
             else return false;
         }
     }

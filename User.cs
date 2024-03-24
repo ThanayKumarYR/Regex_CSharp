@@ -10,7 +10,8 @@ namespace RegexProblems
     class User
     {
         private string FirstName { get; set; }
-        private string LastName { get; set; }   
+        private string LastName { get; set; } 
+        private string Email { get; set; }
 
         public User()
         {
@@ -36,6 +37,12 @@ namespace RegexProblems
                 lastName = lastName.Trim();
                 if (validate.IsName(lastName)) LastName = lastName;
                 else throw new Exception("Last name is invalid, first letter should be in caps and minimum 3 alpabets should present !");
+
+                Console.Write("Enter the email = ");
+                string email = Console.ReadLine();
+                email = email.Trim();
+                if (validate.IsEmail(email)) Email = email;
+                else throw new Exception("Email is invalid, email has 3 mandatory parts(abc,bl and co) and 2 optional (xyz & in) with precise @ and . positions!");
             }
             catch(Exception e)
             {

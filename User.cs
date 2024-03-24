@@ -25,34 +25,40 @@ namespace RegexProblems
         {
             try
             {
+               
                 Validation validate = new Validation();
 
                 Console.WriteLine("Register the User !");
 
+                //takes First name as input
                 Console.Write("Enter the First Name = ");
                 string firstName = Console.ReadLine();
                 firstName = firstName.Trim();
                 if (validate.IsName(firstName)) FirstName = firstName;
                 else throw new Exception("First name is invalid, first letter should be in caps and minimum 3 alpabets should present !");
 
+                //takes Last name as input
                 Console.Write("Enter the Last Name = ");
                 string lastName = Console.ReadLine();
                 lastName = lastName.Trim();
                 if (validate.IsName(lastName)) LastName = lastName;
                 else throw new Exception("Last name is invalid, first letter should be in caps and minimum 3 alpabets should present !");
 
+                //takes email as input
                 Console.Write("Enter the email = ");
                 string email = Console.ReadLine();
                 email = email.Trim();
                 if (validate.IsEmail(email)) Email = email;
                 else throw new Exception("Email is invalid, email has 3 mandatory parts(abc,bl and co) and 2 optional (xyz & in) with precise @ and . positions!");
 
+                //takes phone number as input
                 Console.Write("Enter the mobile number = ");
                 string number = Console.ReadLine();
                 number = number.Trim();
                 if (validate.IsNumber(number)) MobileNumber = number;
                 else throw new Exception("Mobile number is invalid,Country code followed by space and 10 digit number");
 
+                //takes password as input
                 Console.Write("Enter the password = ");
                 string password = Console.ReadLine();
                 password = password.Trim();

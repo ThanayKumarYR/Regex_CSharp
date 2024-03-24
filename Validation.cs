@@ -16,6 +16,7 @@ namespace RegexProblems
 
         private string PatNumber { get; set; } = @"^[0-9]{1,3}\s[0-9]{10}$";
 
+        //refactoring code of email
         private string PatPassword { get; set; } = "^(?=.*?[A-Z])(?=.*?[0-9])(?=[^#?!@$%^&*-+]*[#?!@$%^&*-+][^#?!@$%^&*-+]*$).{8,}$";
         public bool IsName(string name)
         {

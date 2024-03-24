@@ -15,9 +15,11 @@ namespace RegexProblems
         private string PatEmail { get; set; } = @"^\w{3,}(.\w{1,})?@[a-z]{1,}.[a-z]{1,}(.[a-z]{1,})?$";
 
         private string PatNumber { get; set; } = @"^[0-9]{1,3}\s[0-9]{10}$";
-        public bool IsName(string Name)
+
+        private string PatPassword { get; set; } = ".{8,}";
+        public bool IsName(string name)
         {
-            if (Regex.IsMatch(Name,PatName)) return true;
+            if (Regex.IsMatch(name,PatName)) return true;
             else return false;
         }
 
@@ -27,9 +29,14 @@ namespace RegexProblems
             else return false;
         }
 
-        public bool IsNumber(string email)
+        public bool IsNumber(string number)
         {
-            if (Regex.IsMatch(email, PatNumber)) return true;
+            if (Regex.IsMatch(number, PatNumber)) return true;
+            else return false;
+        }
+        public bool IsPassword(string password)
+        {
+            if (Regex.IsMatch(password, PatPassword)) return true;
             else return false;
         }
     }

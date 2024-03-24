@@ -29,35 +29,35 @@ namespace RegexProblems
 
                 Console.WriteLine("Register the User !");
 
-                Console.Write("Enter the First Name = ");
-                string firstName = Console.ReadLine();
-                firstName = firstName.Trim();
-                if (validate.IsName(firstName)) FirstName = firstName;
-                else throw new Exception("First name is invalid, first letter should be in caps and minimum 3 alpabets should present !");
+                //Console.Write("Enter the First Name = ");
+                //string firstName = Console.ReadLine();
+                //firstName = firstName.Trim();
+                //if (validate.IsName(firstName)) FirstName = firstName;
+                //else throw new Exception("First name is invalid, first letter should be in caps and minimum 3 alpabets should present !");
 
-                Console.Write("Enter the Last Name = ");
-                string lastName = Console.ReadLine();
-                lastName = lastName.Trim();
-                if (validate.IsName(lastName)) LastName = lastName;
-                else throw new Exception("Last name is invalid, first letter should be in caps and minimum 3 alpabets should present !");
+                //Console.Write("Enter the Last Name = ");
+                //string lastName = Console.ReadLine();
+                //lastName = lastName.Trim();
+                //if (validate.IsName(lastName)) LastName = lastName;
+                //else throw new Exception("Last name is invalid, first letter should be in caps and minimum 3 alpabets should present !");
 
-                Console.Write("Enter the email = ");
-                string email = Console.ReadLine();
-                email = email.Trim();
-                if (validate.IsEmail(email)) Email = email;
-                else throw new Exception("Email is invalid, email has 3 mandatory parts(abc,bl and co) and 2 optional (xyz & in) with precise @ and . positions!");
+                //Console.Write("Enter the email = ");
+                //string email = Console.ReadLine();
+                //email = email.Trim();
+                //if (validate.IsEmail(email)) Email = email;
+                //else throw new Exception("Email is invalid, email has 3 mandatory parts(abc,bl and co) and 2 optional (xyz & in) with precise @ and . positions!");
 
-                Console.Write("Enter the mobile number = ");
-                string number = Console.ReadLine();
-                number = number.Trim();
-                if (validate.IsNumber(number)) MobileNumber = number;
-                else throw new Exception("Mobile number is invalid,Country code followed by space and 10 digit number");
+                //Console.Write("Enter the mobile number = ");
+                //string number = Console.ReadLine();
+                //number = number.Trim();
+                //if (validate.IsNumber(number)) MobileNumber = number;
+                //else throw new Exception("Mobile number is invalid,Country code followed by space and 10 digit number");
 
                 Console.Write("Enter the password = ");
                 string password = Console.ReadLine();
                 password = password.Trim();
                 if (validate.IsPassword(password)) Password = password;
-                else throw new Exception("Password is invalid,\nRule 1: Must contain minimum 8 charcters !\nRule 2: Should have at least 1 Upper Case !\nRule 3: Should have at least 1 digit !");
+                else throw new Exception("Password is invalid,\nRule 1: Must contain minimum 8 charcters !\nRule 2: Should have at least 1 Upper Case !\nRule 3: Should have at least 1 digit !\nRule 4: Should have at exactly one special character !");
 
             }
             catch (Exception e)

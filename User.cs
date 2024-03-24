@@ -52,7 +52,7 @@ namespace RegexProblems
 
         public void Display()
         { 
-            if (FirstName != null && LastName !=null) Console.WriteLine("User = " + FirstName + " " + LastName);
+            if (FirstName != null && LastName !=null && Email != null) Console.WriteLine("User = " + FirstName + " " + LastName + " " + Email);
         }
     }
 }

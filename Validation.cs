@@ -14,6 +14,7 @@ namespace RegexProblems
 
         private string PatEmail { get; set; } = @"^\w{3,}(.\w{1,})?@[a-z]{1,}.[a-z]{1,}(.[a-z]{1,})?$";
 
+        private string PatNumber { get; set; } = @"^[0-9]{1,3}\s[0-9]{10}$";
         public bool IsName(string Name)
         {
             if (Regex.IsMatch(Name,PatName)) return true;
@@ -23,6 +24,12 @@ namespace RegexProblems
         public bool IsEmail(string email) 
         {
             if (Regex.IsMatch(email,PatEmail)) return true;
+            else return false;
+        }
+
+        public bool IsNumber(string email)
+        {
+            if (Regex.IsMatch(email, PatNumber)) return true;
             else return false;
         }
     }

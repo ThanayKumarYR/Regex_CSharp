@@ -10,8 +10,9 @@ namespace RegexProblems
     class User
     {
         private string FirstName { get; set; }
-        private string LastName { get; set; } 
+        private string LastName { get; set; }
         private string Email { get; set; }
+        private string MobileNumber { get; set; }
 
         public User()
         {
@@ -20,7 +21,7 @@ namespace RegexProblems
 
         private void Add()
         {
-            try 
+            try
             {
                 Validation validate = new Validation();
 
@@ -43,16 +44,24 @@ namespace RegexProblems
                 email = email.Trim();
                 if (validate.IsEmail(email)) Email = email;
                 else throw new Exception("Email is invalid, email has 3 mandatory parts(abc,bl and co) and 2 optional (xyz & in) with precise @ and . positions!");
+
+                Console.Write("Enter the mobile number = ");
+                string number = Console.ReadLine();
+                number = number.Trim();
+                if (validate.IsNumber(number)) MobileNumber = number;
+                else throw new Exception("Mobile number is invalid,Country code followed by space and 10 digit number");
+
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
         }
 
         public void Display()
-        { 
-            if (FirstName != null && LastName !=null && Email != null) Console.WriteLine("User = " + FirstName + " " + LastName + " " + Email);
+        {
+            if (FirstName != null && LastName != null && Email != null && MobileNumber != null) Console.WriteLine("User = " + FirstName + " " + LastName + " " + Email + " " + MobileNumber);
         }
     }
 }
+

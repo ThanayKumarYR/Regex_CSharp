@@ -16,7 +16,7 @@ namespace RegexProblems
 
         private string PatNumber { get; set; } = @"^[0-9]{1,3}\s[0-9]{10}$";
 
-        private string PatPassword { get; set; } = "^(?=.*?[A-Z]).{8,}$";
+        private string PatPassword { get; set; } = "^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$";
         public bool IsName(string name)
         {
             if (Regex.IsMatch(name,PatName)) return true;

@@ -57,7 +57,7 @@ namespace RegexProblems
                 string password = Console.ReadLine();
                 password = password.Trim();
                 if (validate.IsPassword(password)) Password = password;
-                else throw new Exception("Password is invalid,\nRule 1: Must contain minimum 8 charcters !\nRule 2: Should have at least 1 Upper Case !");
+                else throw new Exception("Password is invalid,\nRule 1: Must contain minimum 8 charcters !\nRule 2: Should have at least 1 Upper Case !\nRule 3: Should have at least 1 digit !");
 
             }
             catch (Exception e)
